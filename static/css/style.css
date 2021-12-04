@@ -9,6 +9,15 @@ html {
   height: 100%;
 }
 
+/* Set Pop Up Style */
+h3 {
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+}
+
 /* Set Legend Style */
 .info {
   padding: 1px 10px;

@@ -37,14 +37,16 @@ function createFeatures(earthquakeData) {
     function chooseColor(magnitude) {
       switch(true) {
         case magnitude > 7:
-          return "red";
+          return "darkred";
         case magnitude > 6:
-          return "orangered";
+          return "red";
         case magnitude > 5:
-          return "orange";
+          return "orangered";
         case magnitude > 4:
-          return "gold";
+          return "orange";
         case magnitude > 3:
+          return "gold";
+        case magnitude > 2:
           return "yellow";
         default:
           return "green";
@@ -83,7 +85,7 @@ function createFeatures(earthquakeData) {
     
     legend.onAdd = function() {
       var div = L.DomUtil.create("div", "legend"),
-      mag = [0, 2, 4, 6, 8];
+      mag = [1, 2, 3, 4, 5, 6, 7];
     
       div.innerHTML += "<h3 style='text-align: center'>Magnitude</h3>"
         for (var i =0; i < mag.length; i++) {
