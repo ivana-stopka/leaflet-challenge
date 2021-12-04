@@ -77,4 +77,22 @@ function createFeatures(earthquakeData) {
   
     // Sending our earthquakes layer to the createMap function
     earthquakes.addTo(myMap);
+
+    // Add the legend to the map
+    var legend = L.control({position: "bottomright"});
+    
+    legend.onAdd = function() {
+      var div = L.DomUtil.create("div", "legend"),
+      mag = [0, 2, 4, 6, 8];
+    
+      div.innerHTML += "<h3 style='text-align: center'>Magnitude</h3>"
+        for (var i =0; i < mag.length; i++) {
+          div.innerHTML += 
+          '<i style="background:' + chooseColor(mag[i] + 1) + '"></i> ' +
+          mag[i] + (mag[i + 1] ? '&ndash;' + mag[i + 1] + '<br>' : '+');
+        }
+        return div;
+    };
+  
+    legend.addTo(myMap);
 };
