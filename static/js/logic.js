@@ -1,7 +1,7 @@
 // Create a map object
 var myMap = L.map("map", {
-    center: [37.09, -95.71],
-    zoom: 5
+    center: [10, -20],
+    zoom: 2
 });
 
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
