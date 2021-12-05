@@ -14,9 +14,11 @@ The website can be launched from https://ivana-stopka.github.io/leaflet-challeng
 
 JavaScript (D3, Leaflet) and HTML
 
-## API REQUIRED!
+## API Required
 
-Requires Mapbox API (FREE) for map visualisation, geocoding and navigation: https://www.mapbox.com/ 
+Requires Mapbox API for map visualisation, geocoding and navigation. Source: https://www.mapbox.com/ 
+
+API provided in config file (config.js) stored in 'static/js' directory to allow website to be launched from GitHub.
 
 ## Visualization
 
